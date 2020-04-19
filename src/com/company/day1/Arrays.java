@@ -5,7 +5,7 @@ public class Arrays {
         System.out.println("Hello Word");
          System.out.println("My name is Abbos Shirinboev");
         String name="Abror";
-        String type="Tesla'
+        String type="Tesla";
         int num= 21;
         
     }

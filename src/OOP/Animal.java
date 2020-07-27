@@ -2,5 +2,10 @@ package OOP;
 
 public class Animal {
     String name;
-    //Dog is animal
+    public Animal(){
+
+    }
+    public Animal(int i){
+
+    }
 }

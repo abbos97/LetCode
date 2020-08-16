@@ -7,6 +7,7 @@ public class LinkedListEx {
         LinkedList<String> list = new LinkedList<>();
         list.add("a");
         list.add("b");
+        list.add("V");
         list.addFirst("z");
         list.addLast(null);
         System.out.println(list);

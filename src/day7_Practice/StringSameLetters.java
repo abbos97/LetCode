@@ -1,6 +1,7 @@
 package day7_Practice;
 
 import java.util.Arrays;
+import java.util.TreeSet;
 
 public class StringSameLetters {
     /**
@@ -12,9 +13,10 @@ public class StringSameLetters {
      * same("abc",  "abb"); -> false:
      */
     public static void main(String[] args) {
-        System.out.println(same("abc", "cab"));
+        System.out.println(same1("abc", "cab"));
+        System.out.println(same2("abc", "cab"));
     }
-    public static boolean same(String a, String b){
+    public static boolean same1(String a, String b){
         char[]ch1=a.toCharArray();
         char[]ch2=b.toCharArray();
 
@@ -30,4 +32,10 @@ public class StringSameLetters {
         return a1.equals(a2);
 
     }
+    public static boolean same2(String str1, String str2){
+        str1=new TreeSet<String>(Arrays.asList(str1.split(""))).toString();
+        str2=new TreeSet<String>(Arrays.asList(str2.split(""))).toString();
+        return str1.equals(str2);
+    }
+
 }
